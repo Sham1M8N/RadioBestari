@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Radio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* CSS for styling */
+    /* Add your own styles here */
+  </style>
+</head>
+<body>
+    
+    <div class="middle">
+      <h1><img class="a" src="image.png" width="9" height="9"> Radio Bestari V2.1</h1>
+      <hr>
+      <p class="p1">| Unleashing Epic Coolness Across the Airwaves |</p>
+    </div>
+  </div>
+  
+  <div id="radioPlayer">
+    <audio id="audioPlayer" controls></audio>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="column" style="background-color:#faedcd; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold;;">
+  <ul id="stationList">
+    <h2>MALAYSIA</h2>
+    <li><a href="#" onclick="playStation('station1')">Hot FM</a></li>
+    <li><a href="#" onclick="playStation('station2')">Fly FM</a></li>
+    <li><a href="#" onclick="playStation('station3')">Hitz FM</a></li>
+    <li><a href="#" onclick="playStation('station12')">Era FM</a></li>
+    </div>
+
+    <div class="column" style="background-color:#faedcd; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: bold;">
+    <ul id="stationList">  
+    <h2>JAPAN</h2>
+    <li><a href="#" onclick="playStation('station4')">J-Pop Powerplay |Nagoya|Jpop|Rock</a></li>
+    <li><a href="#" onclick="playStation('station5')">Japanimradio |Osaka|Jpop|JMusic|Kpop|Vocaloid & others</a></li>
+    <li><a href="#" onclick="playStation('station6')">Vocaloid Radio //OnlyPhone//</a></li>
+    <li><a href="#" onclick="playStation('station7')">Gensokyo Radio |Tokyo|Electro|Techno|English|</a></li>
+    <li><a href="#" onclick="playStation('station8')">J-Pop Powerplay Kawaii |JPop girlbands|</a></li>
+    <li><a href="#" onclick="playStation('station9')">J-Club asia DREAM |Hip-Hop|R&B|</a></li>
+    <li><a href="#" onclick="playStation('station10')">Anime FM |German|Pop|Anime|</a></li>
+    <li><a href="#" onclick="playStation('station11')">Big B Radio |Pop|Rock|English|</a></li>
+
+    </div>
+  </div>
+
+    <!-- Add more stations as needed -->
+  </ul>
+
+  <script>
+    // JavaScript for handling player functionality
+    function playStation(station) {
+      // Get the audio element
+      var audio = document.getElementById('audioPlayer');
+      
+      // Set the source of the audio element to the selected station
+      audio.src = getStationUrl(station);
+      
+      // Play the audio
+      audio.play();
+    }
+
+    function getStationUrl(station) {
+      // Replace with actual URLs of radio stations
+      if (station === 'station1') {
+        return 'https://mediaprima.rastream.com/mediaprima-hotfm';
+      } else if (station === 'station2') {
+        return 'https://mediaprima.rastream.com/mediaprima-flyfm';
+      } else if (station === 'station3') {
+        return 'https://astro1.rastream.com/hitz';
+      }else if (station === 'station4') {
+        return 'https://kathy.torontocast.com:3560/;';
+      }else if (station === 'station5') {
+        return 'https://ais-edge106-live365-dal02.cdnstream.com/a71939';
+      }else if (station === 'station6') {
+        return 'http://curiosity.shoutca.st:8019/stream';
+      }else if (station === 'station7') {
+        return 'https://stream.gensokyoradio.net/1/';
+      }else if (station === 'station8') {
+        return 'https://kathy.torontocast.com:3060/stream/1/';
+      }else if (station === 'station9') {
+        return 'https://kathy.torontocast.com/jclubhiphop/stream/';
+      }else if (station === 'station10') {
+        return 'https://animefm.stream.laut.fm/animefm?ref=radiode&t302=2023-07-24_06-32-46&uuid=9f902d70-962e-453b-8ece-4c0e038a6d95';
+      }else if (station === 'station11') {
+        return 'https://antares.dribbcast.com/proxy/jpop?mp=/s';
+      }else if (station === 'station12') {
+        return 'https://astro2.rastream.com/era';
+      }else if (station === 'station13') {
+        return '';
+      }
+      // Add more conditions for additional stations
+    }
+  </script>
+</body>
+</html>

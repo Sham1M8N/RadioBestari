@@ -1,0 +1,107 @@
+/* CSS for styling */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 1500px;
+  
+}
+.p1{
+  font-family:"Lucida Console", "Courier New", monospace;
+}
+/* Position text in the top-left corner */
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bgimg{
+  width: auto;
+  padding: 10px;
+  height: auto;
+  background-color: #778da9;
+}
+
+img.a {
+  vertical-align: text-bottom;
+  width: 150px;
+  height: 130px;
+  border: solid 2px red;
+  border-radius: 50%;
+  vertical-align: baseline;
+}
+
+/* Position text in the middle */
+.middle {
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #778da9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    margin-top: 30px;
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 40px;
+    background: #0d1b2a;
+    color: #00b4d8;
+  }
+  #radioPlayer {
+    margin-top: 40px;
+  }
+  
+  #audioPlayer {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #stationList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 40px;
+  }
+  
+  #stationList li {
+    margin-bottom: 10px;
+  }
+  
+  #stationList li a {
+    display: block;
+    background-color: #ff5e3a;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  #stationList li a:hover {
+    background-color: #ff4025;
+  }
+  
+  
